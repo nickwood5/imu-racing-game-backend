@@ -8,7 +8,7 @@ lint:
 	pipenv run ruff check . --fix
 
 run:
-	pipenv run daphne -b 0.0.0.0 -p 8000 mynewproject.asgi:application
+	pipenv run daphne -b 0.0.0.0 -p 8000 imu_racing_game.asgi:application
 
 makemigrations:
 	pipenv run python manage.py makemigrations
